@@ -27,6 +27,8 @@ public class DeathListener implements Listener {
 
         // If a player gets banned, they don't get kicked automatically, so they have to be kicked after they got banned
         player.kickPlayer(Hardcore_plugin.BAN_REASON);
+        
+        playerDeathEvent.setDeathMessage(Hardcore_plugin.PREFIX + player.getName() + " died and got banned for the next 24 hours!");
     }
 
 }
