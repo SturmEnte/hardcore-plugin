@@ -14,7 +14,7 @@ import java.util.Date;
 public class DeathListener implements Listener {
 
     @EventHandler
-    public void onPlayerJoin(PlayerDeathEvent playerDeathEvent) {
+    public void onPlayerDeath(PlayerDeathEvent playerDeathEvent) {
         Player player = playerDeathEvent.getEntity().getPlayer();
 
         // Set unban time to 24 hours after the death
