@@ -1,0 +1,4 @@
+name: hardcore-plugin
+version: '${project.version}'
+main: de.sturmente.hardcore.Hardcore_plugin
+api-version: '1.20'
