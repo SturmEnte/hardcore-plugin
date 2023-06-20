@@ -62,6 +62,10 @@ public class DeathListener implements Listener {
 
         player.getInventory().clear();
 
+        playerDeathEvent.setKeepInventory(false);
+        playerDeathEvent.setKeepLevel(false);
+        playerDeathEvent.getDrops().clear();
+
         // Ban player
         Bukkit.getBanList(BanList.Type.NAME).addBan(player.getName(), Hardcore_plugin.BAN_REASON, date, "Hardcore Plugin");
 
